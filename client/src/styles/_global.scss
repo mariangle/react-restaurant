@@ -1,0 +1,39 @@
+:root{
+--gold: #dcca87;
+--black: #0c0c0c;
+}
+
+*{
+    color: white;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../assets/img/bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+li{
+    list-style: none;
+}
+
+h1, h2, h3, h4{
+    color: var(--gold);
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 1px;
+}
+  
+
+h2{
+    font-size: 2rem;
+}
+p{
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+
+}

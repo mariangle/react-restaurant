@@ -1,0 +1,44 @@
+nav{
+    position: fixed;
+    z-index: 999;
+    width: 100%;    
+}
+
+#logo{
+    font-family: 'Charmonman', cursive;
+    font-size: 1.6rem;
+}
+
+.nav-header{
+    @include flex(space-between, center, row);
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.nav-links{
+    @include flex(center, center, row); 
+    gap: 1rem;
+    @media (max-width: 600px) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        transform: translateX(50%);
+        flex-direction: column;
+        background: black;
+    }
+}
+
+.nav-burger{
+    display: none;
+}
+
+.line1, .line2, .line3{
+    height: 2px;
+    width: 20px;
+    background: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
