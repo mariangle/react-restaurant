@@ -2,6 +2,7 @@ nav{
     position: fixed;
     z-index: 999;
     width: 100%;    
+    background: rgba(0, 0, 0, 0.5);
 }
 
 #logo{
@@ -13,7 +14,7 @@ nav{
     @include flex(space-between, center, row);
     max-width: 1400px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 
 .nav-links{
@@ -28,6 +29,7 @@ nav{
         transform: translateX(50%);
         flex-direction: column;
         background: black;
+        display: none;
     }
 }
 
