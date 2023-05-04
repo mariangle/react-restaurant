@@ -20,6 +20,11 @@ body {
 
 li{
     list-style: none;
+    font-size: clamp(1rem, 1.1vw, 1rem);
+}
+
+a{
+    text-decoration: none;
 }
 
 h1, h2, h3, h4, h5{

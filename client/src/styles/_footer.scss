@@ -1,3 +1,7 @@
+footer{
+    background: var(--black)
+}
+
 .footer-main{
     @include flex(space-between, flex-start, row);
     max-width: 1400px;
@@ -9,7 +13,7 @@
     @include flex(center, center, column);
     flex: 1;
     h3,h4{
-        font-size: 1.6rem;
+        font-size: clamp(1.2rem, 2.5vw, 1.6rem);
         font-family: 'Cormorant Garamond', serif;
     }
     h3{
@@ -23,10 +27,9 @@
     }
     ul{
         @include flex(center, center, column);
-
-    }
-    li{
-        margin-bottom: 0.5rem;
+        li{
+            margin-bottom: 0.5rem;
+        }
     }
     img{
         margin-bottom: 0.5rem;
